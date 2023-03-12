@@ -1,0 +1,19 @@
+공부 내용 키워드 및 간략한 정리
+Chrome V8 JavaScript 엔진으로 빌드된 JavaScript 런타임
+Non-blocking I/O
+Single Thread
+Event Loop
+
+처리 작업 -> Call Stack
+비동기 함수 -> Callback Queue
+
+npm(Node Package Manager)
+
+
+== 단축키 ==
+Terminal -> Ctrl + `
+
+== VSCode 관련 ==
+<확장팩>
+JavaScript(ES6)code snippets -> JS 자동완성 (snippets는 재사용 가능한 코드의 작은 조각)
+ESLint -> 문법 오류 찾기(Prettier와 함께)
