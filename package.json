@@ -1,0 +1,20 @@
+{
+  "name": "node.js-practice",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Node.js 연습",
+  "main": "base.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kimbumsoo99/Node.js-practice.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kimbumsoo99/Node.js-practice/issues"
+  },
+  "homepage": "https://github.com/Kimbumsoo99/Node.js-practice#readme"
+}

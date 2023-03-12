@@ -9,6 +9,10 @@ Event Loop
 
 npm(Node Package Manager)
 
+모듈을 사용할 때
+기본 Common.js와 ES6에 따른 문법 차이로 인하여
+common의 경우 package.json에 require문을 작성하려면 "type":"commonjs" 또는 지워야함.
+ES의 경우 package.json에 import문을 작성하려면 "type":"module"을 작성
 
 == 단축키 ==
 Terminal -> Ctrl + `

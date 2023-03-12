@@ -106,3 +106,8 @@ function say(message = "전달된 메세지가 없습니다.") {
 
 say();
 say("말");
+
+console.table(userList2);
+console.time("time for for-loop");
+for (let i = 0; i < 999999; i++) {}
+console.timeEnd("time for for-loop");
