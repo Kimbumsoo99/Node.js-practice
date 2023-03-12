@@ -1,0 +1,25 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "\"노드JS 연습\"",
+  "main": "index.js",
+  "scripts": {
+    "dev": "babel-node app"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "mysql"
+  ],
+  "author": "Kimbumsoo99",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.21.0",
+    "@babel/core": "^7.21.0",
+    "@babel/node": "^7.20.7",
+    "@babel/preset-env": "^7.20.2"
+  }
+}
