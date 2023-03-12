@@ -14,6 +14,21 @@ npm(Node Package Manager)
 common의 경우 package.json에 require문을 작성하려면 "type":"commonjs" 또는 지워야함.
 ES의 경우 package.json에 import문을 작성하려면 "type":"module"을 작성
 
+REST API
+REST는 자원을 이름으로 구분하여 해당 자원의 상태를 주고 받는 모든 것
+(Representational State Transfer)
+
+HTTP의 CRUD 작업
+POST(생성), GET(조회), PUT(수정), DELETE(삭제)
+
+HTTP + JSON 형태로 REST API를 정의하여 클라이언트가 호출해서 요청할 수 있도록 하는 방식
+
+JSON Server 설치
+npm i -g json-Server
+-> JSON 기반으로 가상의 REST API 서버를 구축할 수 있게하는 npm 모듈
+사용법 : json이 있는 해당 폴더에서 * >json-server --watch [파일명].json *으로 실행
+
+
 == 단축키 ==
 Terminal -> Ctrl + `
 
