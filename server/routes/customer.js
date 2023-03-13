@@ -21,4 +21,4 @@ router.delete("/delete", (req, res) => {
   res.send("/customer/delete 라우트");
 });
 
-export default customer;
+export default router;
