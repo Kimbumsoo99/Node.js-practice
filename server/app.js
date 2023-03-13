@@ -36,3 +36,8 @@ app.use((err, req, res, next) => {
 
 app.use("/customer", customerRoute);
 app.use("/product", productRoute);
+
+app.use(express.static("public")); //public 폴더에 정적 파일을 URL로 제공
+// http://localhost:5000/images/logo.jpg 이런식
+app.use("/static", express.static("files"));
+// 정적 폴더 파일을 여러개 만들어도 상관 X , 앞에 경로를 붙이는것도 가능
