@@ -28,6 +28,10 @@ npm i -g json-Server
 -> JSON 기반으로 가상의 REST API 서버를 구축할 수 있게하는 npm 모듈
 사용법 : json이 있는 해당 폴더에서 * >json-server --watch [파일명].json *으로 실행
 
+
+Postman을 통하여 front-end 기술을 구현하지않고도 백엔드 구성을 확인할 수 있다.
+
+
 == 서버 관련 폴더 정리 ==
 base -> 앞에 기본 문법 연습하던 부분(서버와 관련 X)
 json -> 연습을 위한 json 관련 파일 저장(서버와 관련 X)
@@ -71,6 +75,7 @@ express-session : 서버 기반 세션 생성
 connect-timeout : HTTP 요청 처리를 위해 timeout을 생성
 vhost : 가상 도메인 생성
 
+
 == npm install ==
 express -> 백엔드 프레임워크
 babel -> ES6 문법을 CommonJS로 변경해서 실행해줌.  @babel/cli @babel/core @babel/node @babel/preset-env
@@ -82,6 +87,9 @@ session-file-store -> 세션 정보를 파일로 저장해서 관리할 수 있�
 cors -> CORS 도메인과 포트를 지정해서 권한이 있는 클라이언트만 접근할 수 있도록 관리하는 미들웨어
 morgan -> HTTP 요청에 대한 로그를 관리하기
 multer -> multi-part/form-data 데이터를 처리 즉, 파일 관련 업로드 미들웨어
+response-time -> 응답 시간을 관리하는 미들웨어가
+connect-timeout -> 클라이언트 요청에 대하여 타임 아웃에 따른 연결 종료 기능(제한 시간) / 라우터 별로 타임아웃 지정 가능
+
 
 == 발생 오류 ==
 session-file-store에서 발생한 오류다.
