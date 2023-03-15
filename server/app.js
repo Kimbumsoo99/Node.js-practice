@@ -3,6 +3,11 @@ import customerRoute from "./routes/customer";
 import productRoute from "./routes/product";
 import cookieSession from "cookie-session";
 import session from "express-session";
+import cors from "cors";
+import fs from "fs";
+import path from "path";
+import morgan from "morgan";
+
 var fileStore = require("session-file-store")(session);
 
 const app = express();
@@ -10,9 +15,23 @@ const app = express();
 const port = 5000;
 const appUrl = `http://localhost:${port}`;
 
+const corsOptions = {
+  origin: "http://example.com",
+  optionsSuccessStatus: 200,
+};
+
+const accessLogStream = fs.createWriteStream(
+  path.join(__dirname, "access.log"),
+  {
+    flags: "a",
+  }
+);
+
 app.listen(port, () => {
   console.log(`서버 접속 ${appUrl} 🚀`);
 });
+
+app.use(morgan("combined", { stream: accessLogStream })); //로그로 기록 남기기
 
 // 에러처리 핸들러 미들웨어
 app.use((err, req, res, next) => {
@@ -63,6 +82,8 @@ app.use(
     store: new fileStore(fileStoreOptions), //세션 저장소로 fileStore 사용 (근데 안됨)
   })
 ); //메모리는 휘발성이기 때문에 메모리보다는 물리적 DB혹은 파일로 저장하는것이 좋음
+
+app.use(cors(corsOptions)); //cors 모든 라우터 적용 또는 특정 라우터에만 적용도 시킬 수 있다.
 
 app.use("/customer", customerRoute);
 app.use("/product", productRoute);

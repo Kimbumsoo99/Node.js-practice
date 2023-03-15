@@ -79,6 +79,9 @@ compression -> 주어진 옵션을 통해 응답 본문 압축 / 상황에 따�
 cookie-session -> 사용자 세션을 저장하기 위해 쿠키 내에 사용자 세션 데이터를 저장한다. (사용자 세션은 express-session 모듈을 통해 서버에도 저장 가능)
 express-session -> 세션을 관리하기 위한 미들웨어로서, cookie-session과는 다르게 데이터를 서버에 저장한다.
 session-file-store -> 세션 정보를 파일로 저장해서 관리할 수 있게하는 모듈
+cors -> CORS 도메인과 포트를 지정해서 권한이 있는 클라이언트만 접근할 수 있도록 관리하는 미들웨어
+morgan -> HTTP 요청에 대한 로그를 관리하기
+multer -> multi-part/form-data 데이터를 처리 즉, 파일 관련 업로드 미들웨어
 
 == 발생 오류 ==
 session-file-store에서 발생한 오류다.

@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/Kimbumsoo99/Node.js-practice/issues"
   },
-  "homepage": "https://github.com/Kimbumsoo99/Node.js-practice#readme"
+  "homepage": "https://github.com/Kimbumsoo99/Node.js-practice#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "morgan": "^1.10.0"
+  }
 }
