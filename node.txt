@@ -89,7 +89,7 @@ morgan -> HTTP 요청에 대한 로그를 관리하기
 multer -> multi-part/form-data 데이터를 처리 즉, 파일 관련 업로드 미들웨어
 response-time -> 응답 시간을 관리하는 미들웨어가
 connect-timeout -> 클라이언트 요청에 대하여 타임 아웃에 따른 연결 종료 기능(제한 시간) / 라우터 별로 타임아웃 지정 가능
-
+mysql -> mysql을 사용하기 위한 모듈
 
 == 발생 오류 ==
 session-file-store에서 발생한 오류다.
