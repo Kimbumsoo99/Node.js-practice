@@ -1,1 +1,4 @@
-export default { customerList: "SELECT * FROM customers" };
+export default {
+  customerList: `SELECT * FROM customers`,
+  customerInsert: `insert into customers set ?`,
+};
