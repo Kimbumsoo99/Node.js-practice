@@ -91,6 +91,7 @@ response-time -> 응답 시간을 관리하는 미들웨어가
 connect-timeout -> 클라이언트 요청에 대하여 타임 아웃에 따른 연결 종료 기능(제한 시간) / 라우터 별로 타임아웃 지정 가능
 mysql -> mysql을 사용하기 위한 모듈
 dotenv -> 중요 데이터를 보관하기 위한 .env 환경 변수 파일 생성
+nodemon -> Express 서버를 재시작하지 않고 저장시마다 Node.js 애플리케이션이 재시작되는 모듈
 
 == 발생 오류 ==
 session-file-store에서 발생한 오류다.
