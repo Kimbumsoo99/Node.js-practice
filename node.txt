@@ -95,6 +95,7 @@ nodemon -> Express 서버를 재시작하지 않고 저장시마다 Node.js 애�
 mysql2 ->
 sequelize -> DB를 위한 Promise 기반 Node.js ORM 도구이다.(쿼리문 없이 데이터 조작 가능)
 sequelize-cli -> global로 설치했음, configuration 파일 생성이 쉽게 처리할 수 있음 << 사용중에 에러 발생했음 알고보니 npx sequelize db:create 해야한다함.
+mongoose -> MonfoDB 데이터 조작 모듈, ODM 모듈(Object Document Mappiong) 자바스크립트 객체 데이터를 MongoDB의 문서로 변환해서 저장하는 역할함.(반대도 가능)
 
 == 발생 오류 ==
 session-file-store에서 발생한 오류다.
