@@ -94,7 +94,7 @@ dotenv -> 중요 데이터를 보관하기 위한 .env 환경 변수 파일 생�
 nodemon -> Express 서버를 재시작하지 않고 저장시마다 Node.js 애플리케이션이 재시작되는 모듈
 mysql2 ->
 sequelize -> DB를 위한 Promise 기반 Node.js ORM 도구이다.(쿼리문 없이 데이터 조작 가능)
-sequelize-cli -> global로 설치했음, configuration 파일 생성이 쉽게 처리할 수 있음
+sequelize-cli -> global로 설치했음, configuration 파일 생성이 쉽게 처리할 수 있음 << 사용중에 에러 발생했음 알고보니 npx sequelize db:create 해야한다함.
 
 == 발생 오류 ==
 session-file-store에서 발생한 오류다.

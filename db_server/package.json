@@ -4,7 +4,7 @@
   "description": "\"노드JS 연습\"",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon --exec babel-node app"
+    "dev": "nodemon --exec babel-node app_sequelize"
   },
   "keywords": [
     "node",
