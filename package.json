@@ -19,6 +19,7 @@
   "homepage": "https://github.com/Kimbumsoo99/Node.js-practice#readme",
   "dependencies": {
     "cors": "^2.8.5",
-    "morgan": "^1.10.0"
+    "morgan": "^1.10.0",
+    "xlsx": "^0.18.5"
   }
 }

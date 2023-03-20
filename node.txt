@@ -30,6 +30,9 @@ npm i -g json-Server
 
 
 Postman을 통하여 front-end 기술을 구현하지않고도 백엔드 구성을 확인할 수 있다.
+mailtrap 서비스를 이용해서 가짜 SMTP 서버를 이용할 수 있다.
+SMTP 정보를 사용해서 이메일 발송 프로그램 테스트 가능한실제 받는 사람에게 이메일을 보내지 않고 어떻게 보내지는 지 확인
+
 
 
 == 서버 관련 폴더 정리 ==
@@ -96,6 +99,11 @@ mysql2 ->
 sequelize -> DB를 위한 Promise 기반 Node.js ORM 도구이다.(쿼리문 없이 데이터 조작 가능)
 sequelize-cli -> global로 설치했음, configuration 파일 생성이 쉽게 처리할 수 있음 << 사용중에 에러 발생했음 알고보니 npx sequelize db:create 해야한다함.
 mongoose -> MonfoDB 데이터 조작 모듈, ODM 모듈(Object Document Mappiong) 자바스크립트 객체 데이터를 MongoDB의 문서로 변환해서 저장하는 역할함.(반대도 가능)
+winston -> 로그 관리 모듈
+nodemailer -> Node.js에서 가장 많이 사용되는 메일링 모듈
+node-cron -> 작업 스케줄러이다. (어떤 작업을 주기적으로 실행할 수 있도록 해주는 프로그램)
+xlsx -> 엑셀 파일 생성을 위한 대표적인 모듈 (다른 모듈로 exceljs 도 존재하지만 책에서는 xlsx 사용)
+
 
 == 발생 오류 ==
 session-file-store에서 발생한 오류다.
