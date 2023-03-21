@@ -2,8 +2,8 @@ const multer = require("multer");
 const path = require("path");
 const xlsx = require("xlsx");
 
-require("dotenv").config({ path: "../db_server/.env" });
-const mysql = require("../db_server/mysql/index");
+require("dotenv").config({ path: "mysql/.env" });
+const mysql = require("./mysql/index");
 const express = require("express");
 
 const app = express();
