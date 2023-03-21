@@ -22,4 +22,20 @@ const storage = multer.diskStorage({
   destination: function (req, file, cb) {
     cb(null, "uploads/");
   },
+  filename: function (req, file, cb) {
+    cb(null, new Date().valueOf() + path.extname(file.originalname));
+  },
+});
+
+const upload = multer({ storage: storage });
+
+app.post("/upload/customers", upload.single("xlsx"), function (req, res, next) {
+  const workbook = xlsx.readFile(`./uploads/${req.file.filename}`);
+  const firstSheetName = workbook.SheetNames[0];
+  const firstSheet = workbook.Sheets[firstSheetName];
+  const firstSheetJson = xlsx.utils.sheet_to_json(firstSheet);
+  firstSheetJson.forEach(async (customer) => {
+    await mysql.query("customerInsert", customer);
+  });
+  res.send("ok");
 });
