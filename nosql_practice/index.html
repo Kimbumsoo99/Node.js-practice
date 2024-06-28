@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>NoSQL 데이터 암호화</title>
+    </head>
+    <body>
+        <h1>데이터 암호화 TEST</h1>
+        <form id="dataForm">
+            <input type="text" id="dataInput" placeholder="데이터 입력" />
+            <button>저장</button>
+        </form>
+        <div id="result"></div>
+    </body>
+
+    <script>
+        const form = document.querySelector("#dataForm");
+        const input = document.querySelector("#dataInput");
+        const resultDiv = document.querySelector("#result");
+
+        console.log(form);
+        console.log(input);
+
+        form.addEventListener("submit", async (event) => {
+            event.preventDefault();
+            const data = input.value;
+            console.log(data, "여기다");
+
+            const response = await fetch("/insert", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({ data }),
+            });
+
+            if (response.ok) {
+                const result = await response.text();
+                resultDiv.textContent = result;
+            } else {
+                resultDiv.textContent = "error!!";
+            }
+        });
+    </script>
+</html>
